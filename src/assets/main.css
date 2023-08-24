@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './base.css';
+
+
+/* #app {
+  
+} */
+
+a,
+.green {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: white;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+}
