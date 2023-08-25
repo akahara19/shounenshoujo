@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper video">
         <video class="background-video opacity-75" playsinline autoplay muted loop 
             poster="bg.png">
             <source src="wall.mp4" type="video/mp4" />
@@ -31,6 +31,7 @@ img {
     height: 100vh;
     overflow: hidden;
     object-fit: cover;
+    position: relative;
 }
 
 .background-video {
@@ -45,7 +46,7 @@ img {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40%;
+    width: 30%;
 }
 
 @media (max-aspect-ratio: 16/9) {

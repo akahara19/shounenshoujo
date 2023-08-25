@@ -4,10 +4,10 @@ import about from './components/about.vue'
 </script>
 
 <template>
-    <nav class="w-full bg-white border-gray-200 dark:bg-gray-900">
+    <nav class="w-full bg-white border-gray-200 dark:bg-gray-900" id="nav">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center">
-                <img src="shounenshoujo.png" class="h-16 mr-3" alt="ShounenShoujo Logo" />
+                <img src="shounenshoujo.png" class="h-12 mr-3" alt="ShounenShoujo Logo">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ShounenShoujo</span>
             </a>
             <button @click="toggleMenu" type="button"
@@ -23,18 +23,18 @@ import about from './components/about.vue'
                 <ul
                     class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <router-link to="/"
-                            class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 text-lg"
-                            aria-current="page">Home</router-link>
+                        <a href="/"
+                            class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 "
+                            aria-current="page">Home</a>
                     </li>
                     <li>
                         <a href="#about"
-                            class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 text-lg"
+                            class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 "
                             aria-current="page">About</a>
                     </li>
                     <li>
                         <router-link to=""
-                            class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 text-lg"
+                            class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 "
                             aria-current="page">Contact</router-link>
                     </li>
                 </ul>
@@ -42,14 +42,20 @@ import about from './components/about.vue'
         </div>
     </nav>
     <welcome />
-    <about/>
+    <about />
 </template>
-  
+<style>
+nav {
+    position: fixed;
+    z-index: 2;
+}
+</style>
 <script>
 export default {
     data() {
         return {
             isMenuOpen: false,
+            isTransparent: true, // Initial state for transparency
         };
     },
     computed: {
@@ -60,6 +66,18 @@ export default {
                 'md:block md:w-auto': !this.isMenuOpen,
             };
         },
+        navClass() {
+            return {
+                'bg-white': this.isTransparent, // Apply white background when transparent
+                'bg-opacity-75': !this.isTransparent, // Apply semi-transparent background when not transparent
+            };
+        },
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.handleScroll);
     },
     methods: {
         toggleMenu() {

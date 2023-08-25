@@ -3,12 +3,14 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import simpleParallax from 'simple-parallax-js';
 
 const app = createApp(App)
 
 app.use(router)
 
 app.mount('#app')
+
 
 const videoContainer = document.querySelector(".wrapper");
 const title = document.querySelector(".title");
@@ -39,4 +41,23 @@ setInterval(function () {
 
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 
+var video = document.getElementsByClassName('video');
+new simpleParallax(video, {
+  delay: .9,
+  scale: 1.1,
+	transition: 'cubic-bezier(0,0,0,6)',
+});
+// about
+
+var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image, {
+  delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)',
+});
+
+var cardAbout = document.getElementsByClassName('cardAbout');
+new simpleParallax(cardAbout, {
+  delay: .10,
+	transition: 'cubic-bezier(0,0,0,1)',
+});
 
