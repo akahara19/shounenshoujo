@@ -1,0 +1,184 @@
+<template>
+    <section id="content">
+        <!--  smooth scrolling biz goes in here -->
+        <section class="image-grid container">
+            <!--    use picture elements -->
+            <picture class="image_cont">
+                <source
+                    srcset="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNTU3OA&ixlib=rb-1.2.1&q=85&w=1500"
+                    media="(min-width: 1500px)">
+                <source
+                    srcset="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNTU3OA&ixlib=rb-1.2.1&q=85&w=1000"
+                    media="(min-width: 700px)">
+                <img class=""
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNTU3OA&ixlib=rb-1.2.1&q=85&w=600">
+            </picture>
+            <!--    or just images -->
+            <div class="image_cont">
+                <img src="https://images.unsplash.com/photo-1569596082827-c5e8990496cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNDg3NQ&ixlib=rb-1.2.1&q=80&w=500"
+                    alt="">
+            </div>
+            <div class="image_cont">
+                <img src="https://images.unsplash.com/photo-1587932775991-708a20af2cc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNDQ5Mg&ixlib=rb-1.2.1&q=80&w=500"
+                    alt="">
+            </div>
+            <div class="image_cont">
+                <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNTU3OA&ixlib=rb-1.2.1&q=85&w=1200"
+                    alt="">
+            </div>
+            <div class="image_cont">
+                <img src="https://images.unsplash.com/photo-1623166200209-6bd48520d6cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNDg3NQ&ixlib=rb-1.2.1&q=80&w=500"
+                    alt="">
+            </div>
+            <div class="image_cont">
+                <img src="https://images.unsplash.com/photo-1532587459811-f057563d1936?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNDg3NQ&ixlib=rb-1.2.1&q=80&w=500"
+                    alt="">
+            </div>
+        </section>
+        <div class="spacer"></div>
+    </section>
+
+    <!-- <div class="overlay">
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+</div> -->
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    overscroll-behavior: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+.spacer {
+    height: 100vh;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 33.3vh;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.image_cont {
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+    max-height: 500px;
+}
+
+.image-grid img {
+    position: absolute;
+    width: 100%;
+    height: 160%;
+    object-fit: cover;
+    bottom: 0;
+}
+
+.image_cont:nth-child(1) {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    height: 95vh;
+}
+
+.image_cont:nth-child(2) {
+    grid-column: 2 / span 8;
+    grid-row: 2;
+    height: 60vh;
+}
+
+.image_cont:nth-child(3) {
+    grid-column: 4 / span 8;
+    grid-row: 3;
+    height: 60vh;
+}
+
+.image_cont:nth-child(4) {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    height: 60vh;
+}
+
+.image_cont:nth-child(5) {
+    grid-column: 4 / span 8;
+    grid-row: 5;
+    height: 80vh;
+}
+
+.image_cont:nth-child(6) {
+    grid-column: 2 / span 8;
+    grid-row: 6;
+    height: 80vh;
+}
+
+@media screen and (min-width: 1000px) {
+    .image_cont {
+        max-height: unset;
+    }
+
+    .image_cont:nth-child(2) {
+        grid-column: 2 / span 4;
+    }
+
+    .image_cont:nth-child(3) {
+        grid-column: 8 / span 4;
+    }
+
+    .image_cont:nth-child(5) {
+        grid-column: 8 / span 4;
+    }
+
+    .image_cont:nth-child(6) {
+        grid-column: 2 / span 4;
+    }
+}
+
+.overlay {
+    position: fixed;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 10rem;
+    width: 100vw;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.overlay div {
+    opacity: 0.2;
+    border-left: 0.5px white solid;
+    border-right: 0.5px white solid;
+}
+</style>

@@ -1,6 +1,8 @@
 <script setup>
 import welcome from './components/welcome.vue'
 import about from './components/about.vue'
+import activity from './components/activity.vue'
+import gallery from './components/gallery.vue'
 </script>
 
 <template>
@@ -43,6 +45,8 @@ import about from './components/about.vue'
     </nav>
     <welcome />
     <about />
+    <activity />
+    <gallery />
 </template>
 <style>
 nav {

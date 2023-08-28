@@ -1,25 +1,28 @@
 <template>
-    <main id="about">
-        <div class="thumbnail">
-            <div class="card cardAbout" data-aos="fade-up">
-                <p><strong>Shounen Shoujo</strong> adalah 日本 Bukatsu (Japan Club) Project SMKN 2 Kota Sukabumi. Di dirikan pada 19 Februari 2023 guna menjadi wadah untuk para siswa-siswi di SMKN2 Kota Sukabumi untuk mengasah minat dan bakat di skema jejepangan.<br> 
-                Di Shounen Shoujo ada 3 bidang yang kita miliki, dimulai dari Nihongo (Bahasa Jepang), Manga Egaku (Menggambar), dan Bunka (Kebudayaan) seperti Anime, Tokusatsu, Cosplay, Dorama, Jpop, dan masih banyak lagi.
-                </p>
-            </div>
-        </div>
-    </main>
+  <main id="about">
+    <div class="thumbnail">
+      <div class="card cardAbout" data-aos="fade-up">
+        <p><strong>Shounen Shoujo</strong> adalah 日本 Bukatsu (Japan Club) Project SMKN 2 Kota Sukabumi. Di dirikan pada 19
+          Februari 2023 guna menjadi wadah untuk para siswa-siswi di SMKN2 Kota Sukabumi untuk mengasah minat dan bakat di
+          skema jejepangan.<br>
+          Di Shounen Shoujo ada 3 bidang yang kita miliki, dimulai dari Nihongo (Bahasa Jepang), Manga Egaku (Menggambar),
+          dan Bunka (Kebudayaan) seperti Anime, Tokusatsu, Cosplay, Dorama, Jpop, dan masih banyak lagi.
+        </p>
+      </div>
+    </div>
+  </main>
 </template>
 
 <style>
 #about {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .thumbnail {
-    background: url('school.jpg');
-    min-height: 100vh;
-    background-size: cover;
-    padding-top: 15%;
+  background: url('school.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  padding-top: 15%;
 }
 
 .card p {
@@ -58,12 +61,19 @@
 }
 
 ::selection {
-	background-color: #1cb4e2;
-	color: #ffffff;
-		}
-
+  background-color: #1cb4e2;
+  color: #ffffff;
+}
 </style>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+export default {
+  name: 'About',
+  mounted() {
+    AOS.init(); // Inisialisasi AOS
+  }
+}
 </script>
