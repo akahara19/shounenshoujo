@@ -257,8 +257,8 @@ header {
     .horizontal-scroll-wrapper {
         overflow-y: scroll !important;
         overflow-x: scroll !important; /* Aktifkan scrolling horizontal */
-    white-space: nowrap; /* Hindari pemisahan ke baris baru */
-    -webkit-overflow-scrolling: touch;
+        white-space: nowrap; /* Hindari pemisahan ke baris baru */
+        -webkit-overflow-scrolling: touch;
         
     }
 
@@ -268,7 +268,6 @@ header {
     
     .img-wrappergallery {
         transform: none !important;
-        transition: none !important;
         transform: rotate(90deg) !important;
     }
 
