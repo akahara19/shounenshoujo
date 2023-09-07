@@ -102,6 +102,9 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+    max-width: 100vw;
+}
 
 @media screen and (max-width: 768px) {
  
