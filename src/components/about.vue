@@ -64,6 +64,18 @@
   background-color: #1cb4e2;
   color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  .thumbnail {
+    padding-top: 30%;
+    padding: 30% 5em;
+  }
+
+  .cardAbout {
+    font-size: 0.8em;
+    height: fit-content;
+  }
+}
 </style>
 
 <script>

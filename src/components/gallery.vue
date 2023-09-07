@@ -106,6 +106,8 @@ export default {
 
 .gallery-page{
     height: 100vh;
+    background: url('/src/assets/background/bg-gallery.jpg');
+    background-size: cover;
 }
 
 .external {
@@ -225,4 +227,7 @@ header {
 .icon svg {
     width: 50px;
     fill: currentcolor;
-}</style>
+}
+
+
+</style>

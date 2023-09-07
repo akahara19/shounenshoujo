@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper video">
+    <div class="wrapper video" id="youkoso!">
         <video class="background-video opacity-75" playsinline autoplay muted loop 
             poster="/src/assets/background/bg.png">
             <source src="/src/assets/background/wall.mp4" type="video/mp4" />
