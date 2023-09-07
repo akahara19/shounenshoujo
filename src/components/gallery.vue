@@ -267,7 +267,6 @@ header {
   }
     
     .img-wrappergallery {
-        transform: none !important;
         transform: rotate(90deg) !important;
     }
 

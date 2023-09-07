@@ -75,7 +75,7 @@
   .cardAbout {
     margin-right: 1em;
     margin-left: 1em;
-    font-size: 0.6em;
+    font-size: 0.7em;
     height: fit-content;
   }
 }
