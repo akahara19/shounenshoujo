@@ -102,8 +102,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+nav{
     max-width: 100vw;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
