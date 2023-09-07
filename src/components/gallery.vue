@@ -229,5 +229,37 @@ header {
     fill: currentcolor;
 }
 
+@media (max-width: 768px) {
+    .gallery-page {
+        background-attachment: scroll; /* Tetapkan latar belakang agar menggulir dengan kontennya */
+    }
 
+    .external {
+        height: auto; /* Tinggi otomatis untuk mengakomodasi kontennya */
+        overflow: visible; /* Tampilkan overflow di perangkat mobile jika diperlukan */
+    }
+
+    .horizontal-scroll-wrapper {
+        flex-direction: column; /* Ubah orientasi menjadi vertikal */
+        align-items: center; /* Pusatkan konten vertikal */
+        white-space: normal; /* Izinkan pemutusan baris */
+        padding-bottom: 2rem; /* Sesuaikan sesuai kebutuhan Anda */
+    }
+
+    .img-wrappergallery {
+        display: block; /* Tampilkan gambar secara berurutan */
+        margin: 1rem 0; /* Beri jarak antara gambar-gambar */
+        text-align: center; /* Pusatkan teks */
+        min-width: auto; /* Hapus lebar minimum gambar */
+    }
+
+    .scroll-info {
+        font-size: 0.8rem; /* Sesuaikan sesuai kebutuhan Anda */
+    }
+
+    .icon svg {
+        width: 0.8rem; /* Sesuaikan sesuai kebutuhan Anda */
+        height: 0.8rem; /* Sesuaikan sesuai kebutuhan Anda */
+    }
+}
 </style>

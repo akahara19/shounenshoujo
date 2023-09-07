@@ -10,12 +10,14 @@
           src="/src/assets/card-img/nihongo.png"
           alt="shoe"
         />
-        <h2 class="text-3xl mt-3"><strong>Nihongo</strong></h2>
-        <p class="w-96">
-          Nihongo merupakan kegiatan yang mempelajari Bahasa Jepang dari mulai
-          tingkat dasar. Dalam kegiatan ini, mempelajari tentang kosa kata, tata
-          bahasa, serta cara pengucapan yang benar dalam Bahasa Jepang.
-        </p>
+        <div class="text">
+          <h2 class="text-3xl mt-3"><strong>Nihongo</strong></h2>
+          <p class="w-96">
+            Nihongo merupakan kegiatan yang mempelajari Bahasa Jepang dari mulai
+            tingkat dasar. Dalam kegiatan ini, mempelajari tentang kosa kata,
+            tata bahasa, serta cara pengucapan yang benar dalam Bahasa Jepang.
+          </p>
+        </div>
       </div>
       <div class="activity-card">
         <img
@@ -23,12 +25,15 @@
           src="/src/assets/card-img/bunka.png"
           alt="bottle"
         />
-        <h2 class="text-3xl mt-3"><strong>Bunka</strong></h2>
-        <p class="w-96">
-          Bunka adalah kegiatan belajar tentang Kebudayaan Jepang yang mencakup
-          berbagai aspek warisan budaya. Ini mencakup elemen-elemen seperti
-          anime, tokusatsu, cosplay, dorama, J-pop, serta seni tradisional.
-        </p>
+        <div class="text">
+          <h2 class="text-3xl mt-3"><strong>Bunka</strong></h2>
+          <p class="w-96">
+            Bunka adalah kegiatan belajar tentang Kebudayaan Jepang yang
+            mencakup berbagai aspek warisan budaya. Ini mencakup elemen-elemen
+            seperti anime, tokusatsu, cosplay, dorama, J-pop, serta seni
+            tradisional.
+          </p>
+        </div>
       </div>
       <div class="activity-card">
         <img
@@ -36,12 +41,14 @@
           src="/src/assets/card-img/manga.png"
           alt="banana"
         />
-        <h2 class="text-3xl mt-3"><strong>Manga Club</strong></h2>
-        <p class="w-96">
-          Manga Club merupakan kegiatan untuk melatih kreatifitas dalam hal
-          menggambar, membuka pintu untuk meresapi dunia imajinasi dan
-          menghidupkan karakter melalui garis, bentuk, dan warna.
-        </p>
+        <div class="text">
+          <h2 class="text-3xl mt-3"><strong>Manga Club</strong></h2>
+          <p class="w-96">
+            Manga Club merupakan kegiatan untuk melatih kreatifitas dalam hal
+            menggambar, membuka pintu untuk meresapi dunia imajinasi dan
+            menghidupkan karakter melalui garis, bentuk, dan warna.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -124,6 +131,8 @@
     width: 90%;
     margin: 0 auto;
     padding: 1rem;
+    display: flex;
+    margin-left: 2.2em;
   }
 
   .img-activity {
@@ -150,6 +159,11 @@
     object-fit: cover;
     transform: perspective(40rem) var(--x-axis, rotateY(var(--angle)));
     transition: 0.5s;
+  }
+
+  .text{
+    margin-right: 1.3em;
+    flex-wrap: wrap;
   }
 }
 </style>
