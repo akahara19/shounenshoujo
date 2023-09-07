@@ -100,7 +100,7 @@ nav {
 /* Gaya CSS untuk scroll halus */
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 nav{
