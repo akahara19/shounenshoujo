@@ -259,7 +259,7 @@ header {
         overflow-x: scroll !important; /* Aktifkan scrolling horizontal */
         white-space: nowrap; /* Hindari pemisahan ke baris baru */
         -webkit-overflow-scrolling: touch;
-        
+        padding: 0;
     }
 
     .horizontal-scroll-wrapper::-webkit-scrollbar-thumb {

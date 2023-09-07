@@ -75,8 +75,9 @@
   .cardAbout {
     margin-right: 1em;
     margin-left: 1em;
-    font-size: 0.7em;
+    font-size: 0.5em;
     height: fit-content;
+    max-height: 80%;
   }
 }
 </style>

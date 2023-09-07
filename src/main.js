@@ -45,7 +45,7 @@ document.addEventListener("contextmenu", (event) => event.preventDefault());
 var video = document.getElementsByClassName('video');
 new simpleParallax(video, {
   delay: .9,
-  scale: 1.0,
+  scale: 1.1,
 	transition: 'cubic-bezier(0,0,0,6)',
 });
 // about
