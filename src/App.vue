@@ -100,11 +100,11 @@ nav {
 /* Gaya CSS untuk scroll halus */
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 nav{
     max-width: 100vw;
-    overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
