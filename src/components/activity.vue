@@ -1,27 +1,27 @@
 <template>
     <div id="activity">
         <div class='heading-wrapper'>
-            <h1 class="mt-20">Kegiatan Kita (毎日)</h1>
+            <h1 class="mt-20"><strong>Kegiatan Kita (毎日)</strong></h1>
         </div>
         <div class='img-wrapper'>
             <div class="activity-card">
-                <img class="img-activity" src="card-img/nihongo.png" alt="shoe">
-                <h2 class="text-3xl mt-3">Nihongo</h2>
+                <img class="img-activity" src="/src/assets/card-img/nihongo.png" alt="shoe">
+                <h2 class="text-3xl mt-3"><strong>Nihongo</strong></h2>
                 <p class="w-96">Nihongo merupakan kegiatan yang mempelajari Bahasa Jepang dari mulai tingkat dasar. Dalam
                     kegiatan ini, mempelajari tentang kosa kata, tata bahasa, serta cara pengucapan yang benar dalam Bahasa
                     Jepang.</p>
             </div>
             <div class="activity-card">
-                <img class="img-activity bg-white" src="card-img/bunka.png" alt="bottle">
-                <h2 class="text-3xl mt-3">Bunka</h2>
+                <img class="img-activity bg-white" src="/src/assets/card-img/bunka.png" alt="bottle">
+                <h2 class="text-3xl mt-3"><strong>Bunka</strong></h2>
                 <p class="w-96">Bunka adalah kegiatan belajar tentang Kebudayaan Jepang yang mencakup berbagai aspek warisan
                     budaya. Ini mencakup elemen-elemen seperti anime, tokusatsu, cosplay, dorama, J-pop, serta seni
                     tradisional. </p>
             </div>
             <div class="activity-card">
-                <img class="img-activity" src="card-img/manga.png" alt="banana">
-                <h2 class="text-3xl mt-3">Manga Egaku</h2>
-                <p class="w-96">Dan Manga Egaku merupakan kegiatan untuk melatih kreatifitas dalam hal menggambar, membuka
+                <img class="img-activity" src="/src/assets/card-img/manga.png" alt="banana">
+                <h2 class="text-3xl mt-3"><strong>Manga Club</strong></h2>
+                <p class="w-96">Manga Club merupakan kegiatan untuk melatih kreatifitas dalam hal menggambar, membuka
                     pintu untuk meresapi dunia imajinasi dan menghidupkan karakter melalui garis, bentuk, dan warna. </p>
             </div>
         </div>
@@ -39,7 +39,7 @@
 }
 
 #activity{
-    background-image: url('bg2.jpg');
+    background-image: url('/src/assets/background/bg2.jpg');
     padding-bottom: 1em;
 }
 

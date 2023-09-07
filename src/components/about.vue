@@ -5,7 +5,7 @@
         <p><strong>Shounen Shoujo</strong> adalah 日本 Bukatsu (Japan Club) Project SMKN 2 Kota Sukabumi. Di dirikan pada 19
           Februari 2023 guna menjadi wadah untuk para siswa-siswi di SMKN2 Kota Sukabumi untuk mengasah minat dan bakat di
           skema jejepangan.<br>
-          Di Shounen Shoujo ada 3 bidang yang kita miliki, dimulai dari Nihongo (Bahasa Jepang), Manga Egaku (Menggambar),
+          Di Shounen Shoujo ada 3 bidang yang kita miliki, dimulai dari Nihongo (Bahasa Jepang), Manga Club (Menggambar),
           dan Bunka (Kebudayaan) seperti Anime, Tokusatsu, Cosplay, Dorama, Jpop, dan masih banyak lagi.
         </p>
       </div>
@@ -19,7 +19,7 @@
 }
 
 .thumbnail {
-  background: url('school.jpg');
+  background: url('/src/assets/background/school.jpg');
   min-height: 100vh;
   background-size: cover;
   padding-top: 15%;

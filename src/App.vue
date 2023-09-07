@@ -9,7 +9,7 @@ import gallery from './components/gallery.vue'
     <nav class="w-full bg-white border-gray-200 dark:bg-gray-900" id="nav">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center">
-                <img src="shounenshoujo.png" class="h-12 mr-3" alt="ShounenShoujo Logo">
+                <img src="../src/assets/shounenshoujo.png" class="h-12 mr-3" alt="ShounenShoujo Logo">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ShounenShoujo</span>
             </a>
             <button @click="toggleMenu" type="button"
@@ -35,9 +35,14 @@ import gallery from './components/gallery.vue'
                             aria-current="page">About</a>
                     </li>
                     <li>
-                        <router-link to=""
+                        <a href="#activity"
                             class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 "
-                            aria-current="page">Contact</router-link>
+                            aria-current="page">Activity</a>
+                    </li>
+                    <li>
+                        <a href="#gallery"
+                            class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 "
+                            aria-current="page">Gallery</a>
                     </li>
                 </ul>
             </div>

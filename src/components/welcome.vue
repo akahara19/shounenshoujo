@@ -1,11 +1,11 @@
 <template>
     <div class="wrapper video">
         <video class="background-video opacity-75" playsinline autoplay muted loop 
-            poster="bg.png">
-            <source src="wall.mp4" type="video/mp4" />
+            poster="/src/assets/background/bg.png">
+            <source src="/src/assets/background/wall.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
-        <img class="title" src="text/shounenshoujo.png" />
+        <img class="title" src="/src/assets/text/shounenshoujo.png" />
     </div>
 </template>
 

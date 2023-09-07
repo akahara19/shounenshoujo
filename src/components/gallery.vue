@@ -1,57 +1,85 @@
 <template>
-    <section id="content">
-        <!--  smooth scrolling biz goes in here -->
-        <section class="image-grid container">
-            <!--    use picture elements -->
-            <picture class="image_cont">
-                <source
-                    srcset="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNTU3OA&ixlib=rb-1.2.1&q=85&w=1500"
-                    media="(min-width: 1500px)">
-                <source
-                    srcset="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNTU3OA&ixlib=rb-1.2.1&q=85&w=1000"
-                    media="(min-width: 700px)">
-                <img class=""
-                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNTU3OA&ixlib=rb-1.2.1&q=85&w=600">
-            </picture>
-            <!--    or just images -->
-            <div class="image_cont">
-                <img src="https://images.unsplash.com/photo-1569596082827-c5e8990496cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNDg3NQ&ixlib=rb-1.2.1&q=80&w=500"
-                    alt="">
+    <div class="gallery-page">
+        <div class="external" id="gallery">
+        <div class="horizontal-scroll-wrapper">
+            <div class="img-wrappergallery slower">
+                <a href="/src/assets/fotbar/1.jpg" target="_blank" rel="noopener"><img
+                        src="/src/assets/fotbar/1.jpg" alt="">
+                </a>
             </div>
-            <div class="image_cont">
-                <img src="https://images.unsplash.com/photo-1587932775991-708a20af2cc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNDQ5Mg&ixlib=rb-1.2.1&q=80&w=500"
-                    alt="">
-            </div>
-            <div class="image_cont">
-                <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNTU3OA&ixlib=rb-1.2.1&q=85&w=1200"
-                    alt="">
-            </div>
-            <div class="image_cont">
-                <img src="https://images.unsplash.com/photo-1623166200209-6bd48520d6cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNDg3NQ&ixlib=rb-1.2.1&q=80&w=500"
-                    alt="">
-            </div>
-            <div class="image_cont">
-                <img src="https://images.unsplash.com/photo-1532587459811-f057563d1936?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNDg3NQ&ixlib=rb-1.2.1&q=80&w=500"
-                    alt="">
-            </div>
-        </section>
-        <div class="spacer"></div>
-    </section>
 
-    <!-- <div class="overlay">
- <div></div>
- <div></div>
- <div></div>
- <div></div>
- <div></div>
- <div></div>
- <div></div>
- <div></div>
- <div></div>
- <div></div>
- <div></div>
- <div></div>
-</div> -->
+            <div class="img-wrappergallery faster">
+                <a href="/src/assets/fotbar/2.jpg" target="_blank"
+                    rel="noopener">
+                    <img src="/src/assets/fotbar/2.jpg" alt="">
+                </a>
+            </div>
+
+
+            <div class="img-wrappergallery">
+                <a href="/src/assets/fotbar/3.jpg" target="_blank"
+                    rel="noopener">
+                    <img src="/src/assets/fotbar/3.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="img-wrappergallery slower">
+                <a href="/src/assets/fotbar/9.jpg" target="_blank" rel="noopener">
+                    <img src="/src/assets/fotbar/9.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="img-wrappergallery faster1">
+                <a href="/src/assets/fotbar/4.jpg"
+                    target="_blank" rel="noopener">
+                    <img src="/src/assets/fotbar/4.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="img-wrappergallery slower slower2">
+                <a href="/src/assets/fotbar/6.jpg" target="_blank"
+                    rel="noopener">
+                    <img src="/src/assets/fotbar/6.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="img-wrappergallery">
+                <a href="/src/assets/fotbar/7.jpg" target="_blank"
+                    rel="noopener">
+                    <img src="/src/assets/fotbar/7.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="img-wrappergallery slower">
+                <a href="/src/assets/fotbar/5.jpg" target="_blank"
+                    rel="noopener">
+                    <img src="/src/assets/fotbar/5.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="img-wrappergallery">
+                <a href="/src/assets/fotbar/10.jpg" target="_blank"
+                    rel="noopener">
+                    <img src="/src/assets/fotbar/10.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="img-wrappergallery slower last">
+                <a href="/src/assets/fotbar/8.jpg" target="_blank"
+                    rel="noopener">
+                    <img src="/src/assets/fotbar/8.jpg" alt="">
+                </a>
+            </div>
+
+            
+        </div>
+        <p class="scroll-info"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100">
+                    <path
+                        d="M50,67.1c-0.6,0-1.2-0.2-1.8-0.7c-3.8-3.8-7.7-7.7-11.5-11.5c-2.3-2.3,1.2-5.8,3.5-3.5c2.5,2.5,4.9,4.9,7.4,7.4      c0-13.7,0-27.4,0-41.2c0-0.6,0.2-1.2,0.5-1.5c0,0,0,0,0,0c0.4-0.6,1.1-1,2-0.9c13.7,0.3,26.4,7.2,33.5,19.1      C96.5,55.9,84.7,85,60.2,91.6C35.5,98.2,11.6,79.1,11.1,54c-0.1-3.2,4.9-3.2,5,0c0.3,13.8,8.4,26.4,21.3,31.5      c12.5,5,27.1,1.9,36.6-7.5c9.5-9.5,12.5-24.1,7.5-36.6c-4.8-12.1-16.3-20.1-29-21.2c0,12.8,0,25.5,0,38.3      c2.5-2.5,4.9-4.9,7.4-7.4c2.3-2.3,5.8,1.3,3.5,3.5c-3.9,3.9-7.8,7.8-11.8,11.8C51.2,66.9,50.6,67.1,50,67.1z" />
+                </svg></span> Try scrolling down</p>
+    </div>
+    </div>
 </template>
 
 <script>
@@ -61,124 +89,140 @@ export default {
 </script>
 
 <style>
-* {
-    box-sizing: border-box;
+/* Inspired by this pen by Pieter Biesemans https://codepen.io/pieter-biesemans/pen/BQBWXX and My Mother Before Me project http://mymotherbeforeme.com/ */
+
+
+
+/* hide scrollbar */
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
 }
 
-body {
-    background-color: #111;
-    overscroll-behavior: none;
-    margin: 0;
-    padding: 0;
+::-webkit-scrollbar-button {
+    width: 1px;
+    height: 1px;
+}
+
+.gallery-page{
+    height: 100vh;
+}
+
+.external {
+    /* overflow:  */
+    height: 20vh;
+}
+
+.horizontal-scroll-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vh;
+    transform: rotate(-90deg) translate3d(0, -100vh, 0);
+    transform-origin: right top;
+    overflow-y: auto;
     overflow-x: hidden;
+    padding: 0;
+    height: 100vw;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    padding-bottom: 10rem;
 }
 
-.container {
-    max-width: 2500px;
-    margin: 0 auto;
+.img-wrappergallery {
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    transform-origin: 50% 40%;
+    transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+    transition: 1s;
 }
 
-.spacer {
-    height: 100vh;
+.img-wrappergallery:hover {
+    min-height: 65vh;
 }
 
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 33.3vh;
-    width: 100vw;
-    margin: 0 auto;
+.slower {
+    transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
 }
 
-.image_cont {
-    position: relative;
-    overflow: hidden;
-    height: 80vh;
-    max-height: 500px;
+.slower1 {
+    transform: rotate(90deg) translateZ(-.25px) scale(1.05) translateX(0%) translateY(8vh);
 }
 
-.image-grid img {
+.slower2 {
+    transform: rotate(90deg) translateZ(-.3px) scale(1.3) translateX(0%) translateY(2vh);
+}
+
+.slower-down {
+    transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(16vh);
+}
+
+.faster {
+    transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(14vh);
+}
+
+.faster1 {
+    transform: rotate(90deg) translateZ(.05px) scale(0.8) translateX(0%) translateY(10vh);
+}
+
+.fastest {
+    transform: rotate(90deg) translateZ(.22px) scale(0.7) translateX(-10vh) translateY(-15vh);
+}
+
+.vertical {
+    transform: rotate(90deg) translateZ(-.15px) scale(1.15) translateX(0%) translateY(0%);
+}
+
+.last {
+    transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh);
+}
+
+.scroll-info,
+header {
     position: absolute;
-    width: 100%;
-    height: 160%;
-    object-fit: cover;
-    bottom: 0;
+    left: 1rem;
 }
 
-.image_cont:nth-child(1) {
-    grid-column: 1 / -1;
-    grid-row: 1;
-    height: 95vh;
+
+header {
+    bottom: 1rem;
 }
 
-.image_cont:nth-child(2) {
-    grid-column: 2 / span 8;
-    grid-row: 2;
-    height: 60vh;
+.scroll-info {
+    top: 1rem;
 }
 
-.image_cont:nth-child(3) {
-    grid-column: 4 / span 8;
-    grid-row: 3;
-    height: 60vh;
+
+
+.img-wrappergallery a {
+    overflow: hidden;
+    display: block;
+    padding: 1vh;
+    background: #efecdb;
+    box-shadow: 0 10px 50px #5f2f1182;
 }
 
-.image_cont:nth-child(4) {
-    grid-column: 1 / -1;
-    grid-row: 4;
-    height: 60vh;
+.img-wrappergallery a img{
+    max-width: 45vh;
+    max-height: 50vh;
+    transition: .5s;
+    vertical-align: top;
 }
 
-.image_cont:nth-child(5) {
-    grid-column: 4 / span 8;
-    grid-row: 5;
-    height: 80vh;
+
+.scroll-info {
+    margin: 0;
 }
 
-.image_cont:nth-child(6) {
-    grid-column: 2 / span 8;
-    grid-row: 6;
-    height: 80vh;
+.scroll-info {
+    display: flex;
+    align-items: center;
 }
 
-@media screen and (min-width: 1000px) {
-    .image_cont {
-        max-height: unset;
-    }
-
-    .image_cont:nth-child(2) {
-        grid-column: 2 / span 4;
-    }
-
-    .image_cont:nth-child(3) {
-        grid-column: 8 / span 4;
-    }
-
-    .image_cont:nth-child(5) {
-        grid-column: 8 / span 4;
-    }
-
-    .image_cont:nth-child(6) {
-        grid-column: 2 / span 4;
-    }
-}
-
-.overlay {
-    position: fixed;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 10rem;
-    width: 100vw;
-    margin: 0 auto;
-    z-index: -1;
-}
-
-.overlay div {
-    opacity: 0.2;
-    border-left: 0.5px white solid;
-    border-right: 0.5px white solid;
-}
-</style>
+.icon svg {
+    width: 50px;
+    fill: currentcolor;
+}</style>
