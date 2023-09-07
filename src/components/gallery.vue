@@ -230,27 +230,16 @@ header {
 }
 
 /* Untuk perangkat mobile dengan lebar maksimum 768px */
+
+/* Hapus transformasi dan transisi pada perangkat seluler dengan lebar maksimum 768px */
 @media (max-width: 768px) {
-    .horizontal-scroll-wrapper {
-        display: block; /* Mengubah tampilan menjadi block */
-        text-align: center; /* Pusatkan konten horizontal */
-        padding: 1rem; /* Tambahkan jarak antara gambar-gambar */
-        overflow-y: scroll; /* Memastikan pengguliran ke vertikal */
-        overflow-x: hidden;
-        height: auto; /* Set tinggi otomatis untuk mengakomodasi kontennya */
-    }
-
     .img-wrappergallery {
-        display: block; /* Mengubah tampilan gambar menjadi block */
-        margin: 1rem 0; /* Tambahkan jarak antara gambar-gambar */
-        text-align: center; /* Pusatkan teks */
-        transform: none; /* Menghapus semua transformasi */
-    }
-
-    .scroll-info {
-        display: none; /* Sembunyikan informasi scroll */
+        transform: none !important;
+        transition: none !important;
+        transform: rotate(90deg) !important;
     }
 }
+
 
 
 </style>
