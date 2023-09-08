@@ -142,7 +142,6 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
-    AOS.init(); // Inisialisasi AOS
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.handleScroll);
