@@ -90,9 +90,17 @@
   display: flex;
   margin: 0 0 2.4rem 0;
   justify-content: center;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 2.4rem;
   font-family: Poppins;
+}
+
+img[loading="lazy"] {
+  transition: opacity 0.5s ease in;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {

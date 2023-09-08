@@ -225,7 +225,7 @@ header {
     display: block;
     padding: 1vh;
     background: #efecdb;
-    box-shadow: 0 10px 50px #5f2f1182;
+    box-shadow: 0 10px 50px #cfcfcf82;
 }
 
 .img-wrappergallery a img{
@@ -249,6 +249,16 @@ header {
     width: 50px;
     fill: currentcolor;
 }
+
+img[loading="lazy"] {
+  transition: opacity 0.5s ease in;
+}
+
+img[loading="lazy"].loaded {
+  opacity: 1;
+  transition: opacity 0.5s ease in;
+}
+
 
 /* Untuk perangkat mobile dengan lebar maksimum 768px */
 
