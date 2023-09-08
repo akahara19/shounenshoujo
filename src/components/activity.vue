@@ -1,7 +1,7 @@
 <template>
   <div id="activity">
     <div class="heading-wrapper">
-      <h1 class="mt-20"><strong>Kegiatan Kita (毎日)</strong></h1>
+      <h1 class="mt-20"><strong>Acitvity (毎日)</strong></h1>
     </div>
     <div class="img-wrapper">
       <div class="activity-card">
@@ -10,9 +10,9 @@
           src="/src/assets/card-img/nihongo.png"
           alt="shoe"
         />
-        <div class="text">
-          <h2 class="text-3xl mt-3"><strong>Nihongo</strong></h2>
-          <p class="w-96">
+        <div class="text nigonho">
+          <h2 class="text-3xl mt-3" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);"><strong>Nihongo</strong></h2>
+          <p class="w-96 pt-2 " style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);">
             Nihongo merupakan kegiatan yang mempelajari Bahasa Jepang dari mulai
             tingkat dasar. Dalam kegiatan ini, mempelajari tentang kosa kata,
             tata bahasa, serta cara pengucapan yang benar dalam Bahasa Jepang.
@@ -26,8 +26,8 @@
           alt="bottle"
         />
         <div class="text">
-          <h2 class="text-3xl mt-3"><strong>Bunka</strong></h2>
-          <p class="w-96">
+          <h2 class="text-3xl mt-3" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);"><strong>Bunka</strong></h2>
+          <p class="w-96 pt-2" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);">
             Bunka adalah kegiatan belajar tentang Kebudayaan Jepang yang
             mencakup berbagai aspek warisan budaya. Ini mencakup elemen-elemen
             seperti anime, tokusatsu, cosplay, dorama, J-pop, serta seni
@@ -42,8 +42,8 @@
           alt="banana"
         />
         <div class="text">
-          <h2 class="text-3xl mt-3"><strong>Manga Club</strong></h2>
-          <p class="w-96">
+          <h2 class="text-3xl mt-3" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);"><strong>Manga Club</strong></h2>
+          <p class="w-96 pt-2" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);">
             Manga Club merupakan kegiatan untuk melatih kreatifitas dalam hal
             menggambar, membuka pintu untuk meresapi dunia imajinasi dan
             menghidupkan karakter melalui garis, bentuk, dan warna.
@@ -65,9 +65,10 @@
 }
 
 #activity {
-  background-image: url("/src/assets/background/bg2.jpg");
+  background-image: url("/src/assets/background/bg-activity2.jpg");
   background-size: cover;
   padding-bottom: 1em;
+  background-blend-mode: darken;
 }
 
 .img-activity {
@@ -164,6 +165,11 @@
   .text{
     margin-right: 1.3em;
     flex-wrap: wrap;
+  }
+
+  .text h2, .text p{
+    font-weight: bold;
+    padding: 1em;
   }
 }
 </style>

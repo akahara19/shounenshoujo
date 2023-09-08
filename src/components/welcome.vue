@@ -2,7 +2,7 @@
     <div class="wrapper video" id="youkoso!">
         <video class="background-video opacity-75" playsinline autoplay muted loop 
             poster="/src/assets/background/bg.png">
-            <source src="/src/assets/background/wall.mp4" type="video/mp4" />
+            <source src="/src/assets/background/wall-reduce.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
         <img class="title" src="/src/assets/text/shounenshoujo.png" />

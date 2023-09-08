@@ -28,6 +28,7 @@ import gallery from "./components/gallery.vue";
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-200 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-default"
         aria-expanded="false"
+        
       >
         <span class="sr-only">Open main menu</span>
         <svg
@@ -49,7 +50,8 @@ import gallery from "./components/gallery.vue";
       <div :class="menuClass" id="navbar-default">
         <ul
           class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md: dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-        >
+          
+          >
           <li>
             <a
               href="#youkoso!" v-smooth-scroll
@@ -139,8 +141,8 @@ export default {
     },
   },
   mounted() {
-    
     window.addEventListener("scroll", this.handleScroll);
+    AOS.init(); // Inisialisasi AOS
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.handleScroll);
