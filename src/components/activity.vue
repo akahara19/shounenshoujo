@@ -5,11 +5,7 @@
     </div>
     <div class="img-wrapper">
       <div class="activity-card">
-        <img
-          class="img-activity"
-          src="/src/assets/card-img/nihongo.png"
-          alt="shoe"
-        />
+        <img class="img-activity" src="/src/assets/card-img/nihongo.png" alt="nihongo" loading="lazy" />
         <div class="text nigonho">
           <h2 class="text-3xl mt-3" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);"><strong>Nihongo</strong></h2>
           <p class="w-96 pt-2 " style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);">
@@ -20,11 +16,7 @@
         </div>
       </div>
       <div class="activity-card">
-        <img
-          class="img-activity bg-white"
-          src="/src/assets/card-img/bunka.png"
-          alt="bottle"
-        />
+        <img class="img-activity bg-white" src="/src/assets/card-img/bunka.png" alt="bunka" loading="lazy" />
         <div class="text">
           <h2 class="text-3xl mt-3" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);"><strong>Bunka</strong></h2>
           <p class="w-96 pt-2" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);">
@@ -36,11 +28,7 @@
         </div>
       </div>
       <div class="activity-card">
-        <img
-          class="img-activity"
-          src="/src/assets/card-img/manga.png"
-          alt="banana"
-        />
+        <img class="img-activity" src="/src/assets/card-img/manga.png" alt="manga" loading="lazy" />
         <div class="text">
           <h2 class="text-3xl mt-3" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);"><strong>Manga Club</strong></h2>
           <p class="w-96 pt-2" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);">
@@ -79,24 +67,15 @@
   cursor: pointer;
   aspect-ratio: calc(1 + var(--parallax));
   width: 20rem;
-  clip-path: inset(
-    0 calc(100% * var(--parallax) / (1 + var(--parallax))) 0 0 round
-      var(--radius)
-  );
+  clip-path: inset(0 calc(100% * var(--parallax) / (1 + var(--parallax))) 0 0 round var(--radius));
   object-fit: cover;
   transform: perspective(40rem) var(--x-axis, rotateY(var(--angle)));
   transition: 0.5s;
 }
 
 .img-activity:hover {
-  clip-path: inset(
-    0 0 0 calc(100% * var(--parallax) / (1 + var(--parallax))) round
-      var(--radius)
-  );
-  --x-axis: translateX(
-      calc(-1 * calc(100% * var(--parallax) / (1 + var(--parallax))))
-    )
-    rotateY(calc(-1 * calc(90deg * var(--parallax))));
+  clip-path: inset(0 0 0 calc(100% * var(--parallax) / (1 + var(--parallax))) round var(--radius));
+  --x-axis: translateX(calc(-1 * calc(100% * var(--parallax) / (1 + var(--parallax))))) rotateY(calc(-1 * calc(90deg * var(--parallax))));
 }
 
 .img-wrapper {
@@ -153,21 +132,19 @@
     cursor: pointer;
     aspect-ratio: calc(1 + var(--parallax));
     width: 20rem;
-    clip-path: inset(
-      0 calc(100% * var(--parallax) / (1 + var(--parallax))) 0 0 round
-        var(--radius)
-    );
+    clip-path: inset(0 calc(100% * var(--parallax) / (1 + var(--parallax))) 0 0 round var(--radius));
     object-fit: cover;
     transform: perspective(40rem) var(--x-axis, rotateY(var(--angle)));
     transition: 0.5s;
   }
 
-  .text{
+  .text {
     margin-right: 1.3em;
     flex-wrap: wrap;
   }
 
-  .text h2, .text p{
+  .text h2,
+  .text p {
     font-weight: bold;
     padding: 1em;
   }

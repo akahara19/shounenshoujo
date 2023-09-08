@@ -4,14 +4,14 @@
         <div class="horizontal-scroll-wrapper">
             <div class="img-wrappergallery slower">
                 <a href="#galerry" data-lightbox="gallery" data-title="Image 1"><img
-                        src="/src/assets/fotbar/1.jpg" alt="">
+                        src="/src/assets/fotbar/1.jpg " alt="" loading="lazy">
                 </a>
             </div>
 
             <div class="img-wrappergallery faster">
                 <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
                     rel="noopener">
-                    <img src="/src/assets/fotbar/2.jpg" alt="">
+                    <img src="/src/assets/fotbar/2.jpg" alt="" loading="lazy">
                 </a>
             </div>
 
@@ -19,55 +19,55 @@
             <div class="img-wrappergallery">
                 <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
                     rel="noopener">
-                    <img src="/src/assets/fotbar/3.jpg" alt="">
+                    <img src="/src/assets/fotbar/3.jpg" alt="" loading="lazy">
                 </a>
             </div>
 
             <div class="img-wrappergallery slower">
                 <a href="#galerry" data-lightbox="gallery" data-title="Image 1" rel="noopener">
-                    <img src="/src/assets/fotbar/9.jpg" alt="">
+                    <img src="/src/assets/fotbar/9.jpg" alt="" loading="lazy">
                 </a>
             </div>
 
             <div class="img-wrappergallery faster1">
                 <a href="#galerry"
                     data-lightbox="gallery" data-title="Image 1" rel="noopener">
-                    <img src="/src/assets/fotbar/4.jpg" alt="">
+                    <img src="/src/assets/fotbar/4.jpg" alt="" loading="lazy">
                 </a>
             </div>
 
             <div class="img-wrappergallery slower slower2">
                 <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
                     rel="noopener">
-                    <img src="/src/assets/fotbar/6.jpg" alt="">
+                    <img src="/src/assets/fotbar/6.jpg" alt="" loading="lazy">
                 </a>
             </div>
 
             <div class="img-wrappergallery">
                 <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
                     rel="noopener">
-                    <img src="/src/assets/fotbar/7.jpg" alt="">
+                    <img src="/src/assets/fotbar/7.jpg" alt="" loading="lazy">
                 </a>
             </div>
 
             <div class="img-wrappergallery slower">
                 <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
                     rel="noopener">
-                    <img src="/src/assets/fotbar/5.jpg" alt="">
+                    <img src="/src/assets/fotbar/5.jpg" alt="" loading="lazy">
                 </a>
             </div>
 
             <div class="img-wrappergallery">
                 <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
                     rel="noopener">
-                    <img src="/src/assets/fotbar/10.jpg" alt="">
+                    <img src="/src/assets/fotbar/10.jpg" alt="" loading="lazy">
                 </a>
             </div>
 
             <div class="img-wrappergallery slower last">
                 <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
                     rel="noopener">
-                    <img src="/src/assets/fotbar/8.jpg" alt="">
+                    <img src="/src/assets/fotbar/8.jpg" alt="" loading="lazy">
                 </a>
             </div>
 
