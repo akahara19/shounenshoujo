@@ -72,7 +72,7 @@
   .cardAbout {
     margin-right: 0.7em;
     margin-left: 0.7em;
-    font-size: 0.7em;
+    font-size: 0.8em;
     height: fit-content;
     max-height: 100%;
   }
