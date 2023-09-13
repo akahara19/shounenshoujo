@@ -70,9 +70,9 @@
   }
 
   .cardAbout {
-    margin-right: 0.1em;
-    margin-left: 0.1em;
-    font-size: 0.6em;
+    margin-right: 0.7em;
+    margin-left: 0.7em;
+    font-size: 0.7em;
     height: fit-content;
     max-height: 100%;
   }
