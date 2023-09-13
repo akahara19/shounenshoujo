@@ -84,7 +84,7 @@
   grid-auto-flow: column;
   gap: 3rem;
   margin-bottom: 7em;
-  scale: 0.7;
+  scale: 0.8;
 }
 
 .heading-wrapper {
