@@ -65,7 +65,7 @@ new simpleParallax(cardAbout, {
 var activity = document.getElementsByClassName('activity');
 new simpleParallax(activity, {
   delay: .10,
-  scale: 1.5,
+  scale: 1.3,
 	transition: 'cubic-bezier(0,0,0,1)',
 });
 

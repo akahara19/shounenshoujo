@@ -35,14 +35,12 @@
 
 .card {
   margin-top: 1000px;
-  min-height: 200px;
   display: flex;
   flex-direction: column;
   position: relative;
   justify-content: space-between;
 
   max-width: 500px;
-  height: 300px;
   padding: 35px;
   margin: auto;
 

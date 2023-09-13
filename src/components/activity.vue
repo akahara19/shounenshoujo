@@ -66,7 +66,7 @@
   /* Radius */
   cursor: pointer;
   aspect-ratio: calc(1 + var(--parallax));
-  width: 20rem;
+  width: 20rem; 
   clip-path: inset(0 calc(100% * var(--parallax) / (1 + var(--parallax))) 0 0 round var(--radius));
   object-fit: cover;
   transform: perspective(40rem) var(--x-axis, rotateY(var(--angle)));
@@ -110,10 +110,15 @@ img[loading="lazy"].loaded {
     margin-bottom: 1rem;
   }
 
+  .activity{
+    max-height: fit-content;
+  }
+
   .img-wrapper {
     grid-auto-flow: row;
     gap: 1rem;
     margin-bottom: 3rem;
+    scale: 0.5;
   }
 
   .activity-card {
