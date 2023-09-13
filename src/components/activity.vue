@@ -117,8 +117,8 @@ img[loading="lazy"].loaded {
   .img-wrapper {
     grid-auto-flow: row;
     gap: 1rem;
-    margin-bottom: 3rem;
-    scale: 0.5;
+    margin-bottom: 4rem;
+    scale: 0.3;
   }
 
   .activity-card {
