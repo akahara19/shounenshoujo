@@ -35,7 +35,6 @@
 
 .card {
   margin-top: 1000px;
-  max-width: 300px;
   min-height: 200px;
   display: flex;
   flex-direction: column;
@@ -77,7 +76,7 @@
     margin-left: 0.1em;
     font-size: 0.6em;
     height: fit-content;
-    max-height: 80%;
+    max-height: 100%;
   }
 }
 </style>

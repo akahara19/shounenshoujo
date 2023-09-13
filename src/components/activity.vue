@@ -1,10 +1,10 @@
 <template>
-  <div id="activity">
-    <div class="heading-wrapper">
+  <div id="activity" class="activity">
+    <div class="heading-wrapper mt-5 pt-5">
       <h1 class="mt-20"><strong>Acitvity (毎日)</strong></h1>
     </div>
     <div class="img-wrapper">
-      <div class="activity-card">
+      <div class="activity-card" data-aos="zoom-out-up"  data-aos-duration="800">
         <img class="img-activity" src="/src/assets/card-img/nihongo.png" alt="nihongo" loading="lazy" />
         <div class="text nigonho">
           <h2 class="text-3xl mt-3" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);"><strong>Nihongo</strong></h2>
@@ -15,7 +15,7 @@
           </p>
         </div>
       </div>
-      <div class="activity-card">
+      <div class="activity-card" data-aos="zoom-out-up"  data-aos-duration="800">
         <img class="img-activity bg-white" src="/src/assets/card-img/bunka.png" alt="bunka" loading="lazy" />
         <div class="text">
           <h2 class="text-3xl mt-3" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);"><strong>Bunka</strong></h2>
@@ -27,7 +27,7 @@
           </p>
         </div>
       </div>
-      <div class="activity-card">
+      <div class="activity-card" data-aos="zoom-out-up"  data-aos-duration="800">
         <img class="img-activity" src="/src/assets/card-img/manga.png" alt="manga" loading="lazy" />
         <div class="text">
           <h2 class="text-3xl mt-3" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);"><strong>Manga Club</strong></h2>
@@ -84,6 +84,7 @@
   grid-auto-flow: column;
   gap: 3rem;
   margin-bottom: 7em;
+  scale: 0.7;
 }
 
 .heading-wrapper {
@@ -158,3 +159,15 @@ img[loading="lazy"].loaded {
   }
 }
 </style>
+
+<script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+export default {
+  name: 'About',
+  mounted() {
+    AOS.init(); // Inisialisasi AOS
+  }
+}
+</script>

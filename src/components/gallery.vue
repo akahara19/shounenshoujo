@@ -70,11 +70,12 @@
                     <img src="/src/assets/fotbar/8.jpg" alt="" loading="lazy">
                 </a>
             </div>
-
+            
             
         </div>
     </div>
-    </div>
+    <footer class="text-center text-white">&copy; Shounen Shoujo 2023年</footer>
+</div>
 </template>
 
 <script>
@@ -259,6 +260,9 @@ img[loading="lazy"].loaded {
   transition: opacity 0.5s ease in;
 }
 
+footer{
+    padding-top: 35em;
+}
 
 /* Untuk perangkat mobile dengan lebar maksimum 768px */
 
