@@ -112,6 +112,7 @@ img[loading="lazy"].loaded {
 
   .activity{
     max-height: fit-content;
+    overflow-x: hidden;
   }
 
   .img-wrapper {
