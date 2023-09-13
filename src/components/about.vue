@@ -64,15 +64,15 @@
 
 @media (max-width: 768px) {
   .thumbnail {
-    padding-top: 13em;
+    padding-top: 10em;
     padding-right: 3em;
     padding-left: 3em;
   }
 
   .cardAbout {
-    margin-right: 0.7em;
-    margin-left: 0.7em;
-    font-size: 0.8em;
+    margin-right: 0.4em;
+    margin-left: 0.4em;
+    font-size: 0.6em;
     height: fit-content;
     max-height: 100%;
   }
