@@ -105,7 +105,8 @@ img[loading="lazy"].loaded {
   .heading-wrapper {
     font-size: 1.8rem;
     text-shadow: 0 2px 1px black;
-    margin-bottom: -4em;
+    margin-bottom: -1em;
+    z-index: 2;
   }
 
   .activity{
@@ -119,7 +120,7 @@ img[loading="lazy"].loaded {
     grid-auto-flow: row;
     gap: 1rem;
     margin-bottom: -4rem;
-    margin-top: -7em;
+    margin-top: -5em;
   }
 
   .activity-card {
@@ -144,7 +145,7 @@ img[loading="lazy"].loaded {
     /* Parallax factor */
     --radius: 1rem;
     /* Radius */
-    cursor: pointer;
+    cursor: auto;
     aspect-ratio: calc(1 + var(--parallax));
     width: 20rem;
     clip-path: inset(0 calc(100% * var(--parallax) / (1 + var(--parallax))) 0 0 round var(--radius));
