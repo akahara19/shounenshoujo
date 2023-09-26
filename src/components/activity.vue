@@ -52,7 +52,6 @@
 #activity {
   background-image: url("/src/assets/background/bg-activity2.jpg");
   background-size: cover;
-  background-attachment: fixed;
   background-blend-mode: darken;
 }
 
@@ -114,9 +113,12 @@ img[loading="lazy"].loaded {
     background-blend-mode: color;
     margin-bottom: -5em;
     background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 1em;
   }
 
   .img-wrapper {
+    margin-top: -10em;
     grid-auto-flow: row;
     gap: 1rem;
     margin-bottom: -4rem;
