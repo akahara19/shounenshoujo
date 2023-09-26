@@ -2,11 +2,10 @@
   <main id="about">
     <div class="thumbnail">
       <div class="card cardAbout" data-aos="fade-up">
-        <p><strong>Shounen Shoujo</strong> adalah 日本 Bukatsu (Japan Club) Project SMKN 2 Kota Sukabumi. Di dirikan pada 19
-          Februari 2023 guna menjadi wadah untuk para siswa-siswi di SMKN2 Kota Sukabumi untuk mengasah minat dan bakat di
-          skema jejepangan.<br>
-          Di Shounen Shoujo ada 3 bidang yang kita miliki, dimulai dari Nihongo (Bahasa Jepang), Manga Club (Menggambar),
-          dan Bunka (Kebudayaan) seperti Anime, Tokusatsu, Cosplay, Dorama, Jpop, dan masih banyak lagi.
+        <p><strong>Shounen Shoujo</strong> adalah 日本 Bukatsu Project (Japan Club) SMKN 2 Kota Sukabumi. Shounen Shoujo ini didirikan pada 19
+          Februari 2023 dengan tujuan menjadi wadah bagi para siswa-siswi di SMKN2 Kota Sukabumi untuk mengembangkan minat dan bakat mereka dalam berbagai aspek budaya Jepang.<br> 
+          Di Shounen Shoujo, terdapat tiga bidang utama yang dapat diikuti, yaitu Nihongo (Bahasa Jepang), Manga Club (Menggambar),
+          dan Bunka (Kebudayaan) seperti Anime, Tokusatsu, Cosplay, Dorama, Jpop. <br> Dengan beragam bidang ini, Shounen Shoujo menjadi tempat yang menarik bagi siswa-siswi SMKN2 Kota Sukabumi untuk mengembangkan minat mereka dalam berbagai aspek budaya Jepang.
         </p>
       </div>
     </div>
@@ -34,13 +33,13 @@
 }
 
 .card {
-  margin-top: 1000px;
+  margin-top: 9000px;
   display: flex;
   flex-direction: column;
   position: relative;
   justify-content: space-between;
 
-  max-width: 500px;
+  max-width: 600px;
   padding: 35px;
   margin: auto;
 
@@ -64,17 +63,24 @@
 
 @media (max-width: 768px) {
   .thumbnail {
-    padding-top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-right: 3em;
     padding-left: 3em;
   }
 
   .cardAbout {
+    margin: 2em auto;
     margin-right: 0.4em;
     margin-left: 0.4em;
     font-size: 0.6em;
     height: fit-content;
     max-height: 100%;
+  }
+  
+  .card{
+    margin-top: -10em;
   }
 }
 </style>

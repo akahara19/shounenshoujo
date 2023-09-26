@@ -69,6 +69,3 @@ new simpleParallax(activity, {
 	transition: 'cubic-bezier(0,0,0,1)',
 });
 
-// Gallery
-
-

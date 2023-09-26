@@ -7,34 +7,27 @@
       <div class="activity-card" data-aos="zoom-out-up"  data-aos-duration="800">
         <img class="img-activity" src="/src/assets/card-img/nihongo.png" alt="nihongo" loading="lazy" />
         <div class="text nigonho">
-          <h2 class="text-3xl mt-3" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);"><strong>Nihongo</strong></h2>
-          <p class="w-96 pt-2 " style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);">
-            Nihongo merupakan kegiatan yang mempelajari Bahasa Jepang dari mulai
-            tingkat dasar. Dalam kegiatan ini, mempelajari tentang kosa kata,
-            tata bahasa, serta cara pengucapan yang benar dalam Bahasa Jepang.
+          <h2 class="text-3xl mt-3" style="text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.9);"><strong>Nihongo</strong></h2>
+          <p class="w-96 pt-2 " style="text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.9);">
+            Nihongo (Bahasa Jepang) adalah kegiatan pembelajaran bahasa Jepang dari tingkat dasar. Di sini, Anda akan belajar tentang kosakata, tata bahasa, dan pengucapan yang benar dalam bahasa Jepang.
           </p>
         </div>
       </div>
       <div class="activity-card" data-aos="zoom-out-up"  data-aos-duration="800">
         <img class="img-activity bg-white" src="/src/assets/card-img/bunka.png" alt="bunka" loading="lazy" />
         <div class="text">
-          <h2 class="text-3xl mt-3" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);"><strong>Bunka</strong></h2>
-          <p class="w-96 pt-2" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);">
-            Bunka adalah kegiatan belajar tentang Kebudayaan Jepang yang
-            mencakup berbagai aspek warisan budaya. Ini mencakup elemen-elemen
-            seperti anime, tokusatsu, cosplay, dorama, J-pop, serta seni
-            tradisional.
+          <h2 class="text-3xl mt-3" style="text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.9);"><strong>Bunka</strong></h2>
+          <p class="w-96 pt-2" style="text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.9);">
+            Bunka adalah kegiatan pembelajaran tentang budaya Jepang yang melibatkan beragam aspek warisan budaya. Ini termasuk elemen seperti anime, tokusatsu, cosplay, dorama, J-pop, dan seni tradisional.
           </p>
         </div>
       </div>
       <div class="activity-card" data-aos="zoom-out-up"  data-aos-duration="800">
         <img class="img-activity" src="/src/assets/card-img/manga.png" alt="manga" loading="lazy" />
         <div class="text">
-          <h2 class="text-3xl mt-3" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);"><strong>Manga Club</strong></h2>
-          <p class="w-96 pt-2" style="text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);">
-            Manga Club merupakan kegiatan untuk melatih kreatifitas dalam hal
-            menggambar, membuka pintu untuk meresapi dunia imajinasi dan
-            menghidupkan karakter melalui garis, bentuk, dan warna.
+          <h2 class="text-3xl mt-3" style="text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.9);"><strong>Manga Club</strong></h2>
+          <p class="w-96 pt-2" style="text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.9);">
+            Manga Club adalah kegiatan yang mendorong kreativitas dalam seni menggambar, membuka pintu bagi imajinasi, dan menghidupkan karakter melalui garis, bentuk, dan warna.
           </p>
         </div>
       </div>
@@ -50,6 +43,10 @@
   text-align: center;
   color: white;
   font-family: Poppins;
+}
+
+.text p{
+  font-size: 1.1em;
 }
 
 #activity {
@@ -107,18 +104,20 @@ img[loading="lazy"].loaded {
 @media (max-width: 768px) {
   .heading-wrapper {
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: -10rem;
+    text-shadow: 0 2px 1px black;
   }
 
   .activity{
     max-height: fit-content;
     overflow-x: hidden;
+    background-blend-mode: color;
   }
 
   .img-wrapper {
     grid-auto-flow: row;
     gap: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: -4rem;
   }
 
   .activity-card {
@@ -155,12 +154,16 @@ img[loading="lazy"].loaded {
   .text {
     margin-right: 1.3em;
     flex-wrap: wrap;
+    font-size: 0.9em;
   }
 
-  .text h2,
+  .text h2{
+    font-weight: bold;
+    padding: 0.2em;
+  }
   .text p {
     font-weight: bold;
-    padding: 1em;
+    padding: 0.5em;
   }
 }
 </style>

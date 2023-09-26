@@ -261,7 +261,8 @@ img[loading="lazy"].loaded {
 }
 
 footer{
-    padding-top: 35em;
+    padding-top: 45em;
+    text-shadow: 0 10px 40px #f8f8f882;
 }
 
 /* Untuk perangkat mobile dengan lebar maksimum 768px */
@@ -288,6 +289,10 @@ footer{
     header {
     position: relative;
     left: 1rem;
+    }
+
+    footer{
+        margin-top: -10em !important;
     }
 }
 </style>
