@@ -104,20 +104,22 @@ img[loading="lazy"].loaded {
 @media (max-width: 768px) {
   .heading-wrapper {
     font-size: 1.8rem;
-    margin-bottom: -10rem;
     text-shadow: 0 2px 1px black;
+    margin-bottom: -4em;
   }
 
   .activity{
     max-height: fit-content;
     overflow-x: hidden;
     background-blend-mode: color;
+    margin-bottom: -5em;
   }
 
   .img-wrapper {
     grid-auto-flow: row;
     gap: 1rem;
     margin-bottom: -4rem;
+    margin-top: -7em;
   }
 
   .activity-card {
