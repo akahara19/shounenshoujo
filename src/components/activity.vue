@@ -106,7 +106,6 @@ img[loading="lazy"].loaded {
     font-size: 1.8rem;
     text-shadow: 0 2px 1px black;
     margin-bottom: -1em;
-    z-index: 2;
   }
 
   .activity{
@@ -114,13 +113,13 @@ img[loading="lazy"].loaded {
     overflow-x: hidden;
     background-blend-mode: color;
     margin-bottom: -5em;
+    background-position: center;
   }
 
   .img-wrapper {
     grid-auto-flow: row;
     gap: 1rem;
     margin-bottom: -4rem;
-    margin-top: -5em;
   }
 
   .activity-card {
@@ -138,6 +137,7 @@ img[loading="lazy"].loaded {
     clip-path: unset;
     transform: none;
     cursor: auto;
+    margin-bottom: 1rem; /* Tambahkan margin bawah agar gambar tidak melebihi teks */
   }
 
   .img-activity {
