@@ -62,10 +62,13 @@ new simpleParallax(cardAbout, {
 	transition: 'cubic-bezier(0,0,0,1)',
 });
 
-var activity = document.getElementsByClassName('activity');
-new simpleParallax(activity, {
-  delay: .10,
-  scale: 1.2,
-	transition: 'cubic-bezier(0,0,0,1)',
-});
+// Cek lebar layar
+if (window.innerWidth > 768) { // Ganti 768 dengan lebar layar yang sesuai
+  var activity = document.getElementsByClassName('activity');
+  new simpleParallax(activity, {
+    delay: 0.10,
+    scale: 1.2,
+    transition: 'cubic-bezier(0,0,0,1)'
+  });
+}
 
