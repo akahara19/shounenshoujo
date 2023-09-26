@@ -52,7 +52,7 @@
 #activity {
   background-image: url("/src/assets/background/bg-activity2.jpg");
   background-size: cover;
-  padding-bottom: 1em;
+  background-attachment: fixed;
   background-blend-mode: darken;
 }
 
@@ -70,10 +70,10 @@
   transition: 0.5s;
 }
 
-.img-activity:hover {
+/* .img-activity:hover {
   clip-path: inset(0 0 0 calc(100% * var(--parallax) / (1 + var(--parallax))) round var(--radius));
   --x-axis: translateX(calc(-1 * calc(100% * var(--parallax) / (1 + var(--parallax))))) rotateY(calc(-1 * calc(90deg * var(--parallax))));
-}
+} */
 
 .img-wrapper {
   display: grid;

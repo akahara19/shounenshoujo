@@ -66,10 +66,7 @@ if (window.innerWidth > 768) {
   });
 }
 
-
-
-// Cek lebar layar
-if (window.innerWidth > 768) { // Ganti 768 dengan lebar layar yang sesuai
+if (window.innerWidth > 768) { 
   var activity = document.getElementsByClassName('activity');
   new simpleParallax(activity, {
     delay: 0.10,
