@@ -63,6 +63,7 @@
 
 @media (max-width: 768px) {
   .thumbnail {
+    scale: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,6 +78,7 @@
     font-size: 0.6em;
     height: fit-content;
     max-height: 100%;
+    scale: 1.3;
   }
   
   .card{

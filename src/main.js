@@ -46,21 +46,27 @@ var video = document.getElementsByClassName('video');
 new simpleParallax(video, {
   delay: .9,
   scale: 1.1,
-	transition: 'cubic-bezier(0,0,0,6)',
+  transition: 'cubic-bezier(0,0,0,6)',
 });
 // about
 
-var image = document.getElementsByClassName('thumbnail');
-new simpleParallax(image, {
-  delay: .6,
-	transition: 'cubic-bezier(0,0,0,1)',
-});
+if (window.innerWidth > 768) {
+  var image = document.getElementsByClassName('thumbnail');
+  new simpleParallax(image, {
+    delay: .6,
+    transition: 'cubic-bezier(0,0,0,1)',
+  });
+}
 
-var cardAbout = document.getElementsByClassName('cardAbout');
-new simpleParallax(cardAbout, {
-  delay: .10,
-	transition: 'cubic-bezier(0,0,0,1)',
-});
+if (window.innerWidth > 768) {
+  var cardAbout = document.getElementsByClassName('cardAbout');
+  new simpleParallax(cardAbout, {
+    delay: .10,
+    transition: 'cubic-bezier(0,0,0,1)',
+  });
+}
+
+
 
 // Cek lebar layar
 if (window.innerWidth > 768) { // Ganti 768 dengan lebar layar yang sesuai
