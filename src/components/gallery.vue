@@ -1,109 +1,101 @@
 <template>
     <div class="gallery-page">
         <div class="external" id="gallery">
-        <div class="horizontal-scroll-wrapper">
-            <div class="img-wrappergallery slower">
-                <a href="#galerry" data-lightbox="gallery" data-title="Image 1"><img
-                        src="/src/assets/fotbar/1.jpg " alt="" loading="lazy">
-                </a>
-            </div>
+            <div class="horizontal-scroll-wrapper">
+                <div class="img-wrappergallery slower">
+                    <a href="#galerry" data-lightbox="gallery" data-title="Image 1"><img src="/src/assets/fotbar/1.jpg "
+                            alt="" loading="lazy">
+                    </a>
+                </div>
 
-            <div class="img-wrappergallery faster">
-                <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
-                    rel="noopener">
-                    <img src="/src/assets/fotbar/2.jpg" alt="" loading="lazy">
-                </a>
-            </div>
+                <div class="img-wrappergallery faster">
+                    <a href="#galerry" data-lightbox="gallery" data-title="Image 1" rel="noopener">
+                        <img src="/src/assets/fotbar/2.jpg" alt="" loading="lazy">
+                    </a>
+                </div>
 
 
-            <div class="img-wrappergallery">
-                <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
-                    rel="noopener">
-                    <img src="/src/assets/fotbar/3.jpg" alt="" loading="lazy">
-                </a>
-            </div>
+                <div class="img-wrappergallery">
+                    <a href="#galerry" data-lightbox="gallery" data-title="Image 1" rel="noopener">
+                        <img src="/src/assets/fotbar/3.jpg" alt="" loading="lazy">
+                    </a>
+                </div>
 
-            <div class="img-wrappergallery slower">
-                <a href="#galerry" data-lightbox="gallery" data-title="Image 1" rel="noopener">
-                    <img src="/src/assets/fotbar/9.jpg" alt="" loading="lazy">
-                </a>
-            </div>
+                <div class="img-wrappergallery slower">
+                    <a href="#galerry" data-lightbox="gallery" data-title="Image 1" rel="noopener">
+                        <img src="/src/assets/fotbar/9.jpg" alt="" loading="lazy">
+                    </a>
+                </div>
 
-            <div class="img-wrappergallery faster1">
-                <a href="#galerry"
-                    data-lightbox="gallery" data-title="Image 1" rel="noopener">
-                    <img src="/src/assets/fotbar/4.jpg" alt="" loading="lazy">
-                </a>
-            </div>
+                <div class="img-wrappergallery faster1">
+                    <a href="#galerry" data-lightbox="gallery" data-title="Image 1" rel="noopener">
+                        <img src="/src/assets/fotbar/4.jpg" alt="" loading="lazy">
+                    </a>
+                </div>
 
-            <div class="img-wrappergallery slower slower2">
-                <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
-                    rel="noopener">
-                    <img src="/src/assets/fotbar/6.jpg" alt="" loading="lazy">
-                </a>
-            </div>
+                <div class="img-wrappergallery slower slower2">
+                    <a href="#galerry" data-lightbox="gallery" data-title="Image 1" rel="noopener">
+                        <img src="/src/assets/fotbar/6.jpg" alt="" loading="lazy">
+                    </a>
+                </div>
 
-            <div class="img-wrappergallery">
-                <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
-                    rel="noopener">
-                    <img src="/src/assets/fotbar/7.jpg" alt="" loading="lazy">
-                </a>
-            </div>
+                <div class="img-wrappergallery">
+                    <a href="#galerry" data-lightbox="gallery" data-title="Image 1" rel="noopener">
+                        <img src="/src/assets/fotbar/7.jpg" alt="" loading="lazy">
+                    </a>
+                </div>
 
-            <div class="img-wrappergallery slower">
-                <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
-                    rel="noopener">
-                    <img src="/src/assets/fotbar/5.jpg" alt="" loading="lazy">
-                </a>
-            </div>
+                <div class="img-wrappergallery slower">
+                    <a href="#galerry" data-lightbox="gallery" data-title="Image 1" rel="noopener">
+                        <img src="/src/assets/fotbar/5.jpg" alt="" loading="lazy">
+                    </a>
+                </div>
 
-            <div class="img-wrappergallery">
-                <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
-                    rel="noopener">
-                    <img src="/src/assets/fotbar/10.jpg" alt="" loading="lazy">
-                </a>
-            </div>
+                <div class="img-wrappergallery">
+                    <a href="#galerry" data-lightbox="gallery" data-title="Image 1" rel="noopener">
+                        <img src="/src/assets/fotbar/10.jpg" alt="" loading="lazy">
+                    </a>
+                </div>
 
-            <div class="img-wrappergallery slower last">
-                <a href="#galerry" data-lightbox="gallery" data-title="Image 1"
-                    rel="noopener">
-                    <img src="/src/assets/fotbar/8.jpg" alt="" loading="lazy">
-                </a>
+                <div class="img-wrappergallery slower last">
+                    <a href="#galerry" data-lightbox="gallery" data-title="Image 1" rel="noopener">
+                        <img src="/src/assets/fotbar/8.jpg" alt="" loading="lazy">
+                    </a>
+                </div>
+
+
             </div>
-            
-            
         </div>
+        <footer class="text-center text-white">&copy; Shounen Shoujo 2023年</footer>
     </div>
-    <footer class="text-center text-white">&copy; Shounen Shoujo 2023年</footer>
-</div>
 </template>
 
 <script>
 export default {
-  mounted() {
-    const horizontalScrollWrapper = document.querySelector('.horizontal-scroll-wrapper');
+    mounted() {
+        const horizontalScrollWrapper = document.querySelector('.horizontal-scroll-wrapper');
 
-    let startX;
-    let currentX;
+        let startX;
+        let currentX;
 
-    horizontalScrollWrapper.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].clientX;
-    });
+        horizontalScrollWrapper.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
 
-    horizontalScrollWrapper.addEventListener('touchmove', (e) => {
-      if (startX === undefined) {
-        return;
-      }
-      currentX = e.touches[0].clientX;
-      const scrollOffset = startX - currentX;
-      horizontalScrollWrapper.scrollLeft += scrollOffset;
-      startX = currentX;
-    });
+        horizontalScrollWrapper.addEventListener('touchmove', (e) => {
+            if (startX === undefined) {
+                return;
+            }
+            currentX = e.touches[0].clientX;
+            const scrollOffset = startX - currentX;
+            horizontalScrollWrapper.scrollLeft += scrollOffset;
+            startX = currentX;
+        });
 
-    horizontalScrollWrapper.addEventListener('touchend', () => {
-      startX = undefined;
-    });
-  },
+        horizontalScrollWrapper.addEventListener('touchend', () => {
+            startX = undefined;
+        });
+    },
 };
 </script>
 
@@ -123,7 +115,7 @@ export default {
     height: 1px;
 }
 
-.gallery-page{
+.gallery-page {
     height: 100vh;
     background: url('/src/assets/background/bg-gallery.jpg');
     background-size: cover;
@@ -148,9 +140,12 @@ export default {
     perspective: 1px;
     transform-style: preserve-3d;
     padding-bottom: 10rem;
-    overflow-x: auto; /* Mengaktifkan scrollbar horizontal */
-    white-space: nowrap; /* Menghindari pemisahan ke baris baru */
-    -webkit-overflow-scrolling: touch; /* Efek scrolling halus di perangkat iOS */
+    overflow-x: auto;
+    /* Mengaktifkan scrollbar horizontal */
+    white-space: nowrap;
+    /* Menghindari pemisahan ke baris baru */
+    -webkit-overflow-scrolling: touch;
+    /* Efek scrolling halus di perangkat iOS */
 }
 
 .img-wrappergallery {
@@ -229,7 +224,7 @@ header {
     box-shadow: 0 10px 50px #cfcfcf82;
 }
 
-.img-wrappergallery a img{
+.img-wrappergallery a img {
     max-width: 45vh;
     max-height: 50vh;
     transition: .5s;
@@ -252,16 +247,16 @@ header {
 }
 
 img[loading="lazy"] {
-  transition: opacity 0.5s ease in;
+    transition: opacity 0.5s ease in;
 }
 
 img[loading="lazy"].loaded {
-  opacity: 1;
-  transition: opacity 0.5s ease in;
+    opacity: 1;
+    transition: opacity 0.5s ease in;
 }
 
-footer{
-    padding-top: 45em;
+footer {
+    padding-top: 32em;
     text-shadow: 0 10px 40px #f8f8f882;
 }
 
@@ -271,28 +266,36 @@ footer{
 @media (max-width: 768px) {
     .horizontal-scroll-wrapper {
         overflow-y: scroll !important;
-        overflow-x: scroll !important; /* Aktifkan scrolling horizontal */
-        white-space: nowrap; /* Hindari pemisahan ke baris baru */
+        overflow-x: scroll !important;
+        /* Aktifkan scrolling horizontal */
+        white-space: nowrap;
+        /* Hindari pemisahan ke baris baru */
         -webkit-overflow-scrolling: touch;
         padding: 0;
     }
 
     .horizontal-scroll-wrapper::-webkit-scrollbar-thumb {
-    background-color: transparent; /* Hapus warna latar belakang thumb */
-  }
-    
+        background-color: transparent;
+        /* Hapus warna latar belakang thumb */
+    }
+
     .img-wrappergallery {
         transform: rotate(90deg) !important;
     }
 
     .scroll-info,
     header {
-    position: relative;
-    left: 1rem;
+        position: relative;
+        left: 1rem;
     }
 
-    footer{
+    footer {
         margin-top: -10em !important;
+    }
+
+    footer {
+        padding-top: 45em;
+        text-shadow: 0 10px 40px #f8f8f882;
     }
 }
 </style>

@@ -61,6 +61,17 @@
   color: #ffffff;
 }
 
+
+@media (min-width: 1024px) {
+  .thumbnail {
+    padding-top: 10%;
+  }
+
+  .cardAbout {
+    font-size: 1em;
+  }
+}
+
 @media (max-width: 768px) {
   .thumbnail {
     scale: 1;

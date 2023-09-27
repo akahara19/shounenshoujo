@@ -69,17 +69,17 @@
   transition: 0.5s;
 }
 
-/* .img-activity:hover {
+.img-activity:hover {
   clip-path: inset(0 0 0 calc(100% * var(--parallax) / (1 + var(--parallax))) round var(--radius));
   --x-axis: translateX(calc(-1 * calc(100% * var(--parallax) / (1 + var(--parallax))))) rotateY(calc(-1 * calc(90deg * var(--parallax))));
-} */
+}
 
 .img-wrapper {
   display: grid;
   place-content: center;
   grid-auto-flow: column;
   gap: 3rem;
-  margin-bottom: 7em;
+  padding-bottom: 3em;
   scale: 0.8;
 }
 
@@ -99,6 +99,8 @@ img[loading="lazy"] {
 img[loading="lazy"].loaded {
   opacity: 1;
 }
+
+
 
 @media (max-width: 768px) {
   .heading-wrapper {
